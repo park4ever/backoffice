@@ -1,4 +1,4 @@
-package com.youngwon.backoffice;
+package com.youngwon.backoffice.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
