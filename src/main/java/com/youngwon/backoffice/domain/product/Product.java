@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.youngwon.backoffice.domain.product.ProductStatus.*;
-import static jakarta.persistence.CascadeType.*;
 import static jakarta.persistence.EnumType.*;
 import static jakarta.persistence.FetchType.*;
 import static jakarta.persistence.GenerationType.*;
@@ -43,7 +42,8 @@ public class Product extends BaseTimeEntity {
     @Column(name = "status", nullable = false, length = 20)
     private ProductStatus status;
 
-    @OneToMany(mappedBy = "product", cascade = ALL)
+    //cascade = ALL 제거 -> 옵션은 항상 ProductOptionRepository.save()로 명시적 저장.
+    @OneToMany(mappedBy = "product")
     private final List<ProductOption> options = new ArrayList<>();
 
     public static Product create(Shop shop, String name) {
@@ -88,7 +88,7 @@ public class Product extends BaseTimeEntity {
     }
 
     public void removeOption(ProductOption option) {
-        this.options.remove(option);
+        option.deactivate();
     }
 
     private static void validateName(String name) {

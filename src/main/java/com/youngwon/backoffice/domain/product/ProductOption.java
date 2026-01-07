@@ -1,7 +1,6 @@
 package com.youngwon.backoffice.domain.product;
 
 import com.youngwon.backoffice.common.entity.BaseTimeEntity;
-import com.youngwon.backoffice.domain.shop.Shop;
 import com.youngwon.backoffice.exception.BusinessException;
 import com.youngwon.backoffice.exception.ErrorCode;
 import jakarta.persistence.*;
