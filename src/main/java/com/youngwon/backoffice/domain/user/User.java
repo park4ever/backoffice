@@ -3,7 +3,6 @@ package com.youngwon.backoffice.domain.user;
 import com.youngwon.backoffice.common.entity.BaseTimeEntity;
 import com.youngwon.backoffice.domain.shop.Shop;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -105,8 +104,8 @@ public class User extends BaseTimeEntity {
         return this.status == ACTIVE;
     }
 
-    public boolean isAdmin() {
-        return this.role == ADMIN;
+    public boolean isOwner() {
+        return this.role == OWNER;
     }
 
     /**

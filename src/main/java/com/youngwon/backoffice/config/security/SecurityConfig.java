@@ -36,8 +36,7 @@ public class SecurityConfig {
                                 "/images/**"
                         ).permitAll()
 
-                        //관리자 API는 ADMIN만 허용
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/api/backoffice/**").hasAnyRole("OWNER", "STAFF")
 
                         //그 외 요청은 인증 필요
                         .anyRequest().authenticated()

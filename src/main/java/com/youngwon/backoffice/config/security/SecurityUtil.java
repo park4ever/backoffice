@@ -32,10 +32,10 @@ public final class SecurityUtil {
         return getCurrentUser().getShopId();
     }
 
-    public static boolean isAdmin() {
+    public static boolean isOwner() {
         return getCurrentUser()
                 .getAuthorities()
                 .stream()
-                .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
+                .anyMatch(a -> a.getAuthority().equals("ROLE_OWNER"));
     }
 }
