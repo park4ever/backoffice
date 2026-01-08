@@ -84,11 +84,6 @@ public class ProductServiceImpl implements ProductService {
         //SKU Key 생성/할당
         String skuKey = skuPolicy.createKey(shopId, productId, option.getId());
 
-        productOptionRepository.findByShopIdAndSkuKey(shopId, skuKey)
-                .ifPresent(exists -> {
-                    throw new BusinessException(ErrorCode.CONFLICT, "SKU Key가 중복되었습니다. 다시 시도해주세요.");
-                });
-
         option.assignSkuKey(skuKey);
 
         return new ProductOptionAddResponse(

@@ -1,6 +1,6 @@
 package com.youngwon.backoffice.config.security;
 
-import com.youngwon.backoffice.auth.CustomUserDetails;
+import com.youngwon.backoffice.common.auth.CustomUserDetails;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 

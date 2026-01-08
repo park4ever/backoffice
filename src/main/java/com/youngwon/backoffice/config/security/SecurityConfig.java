@@ -1,5 +1,6 @@
 package com.youngwon.backoffice.config.security;
 
+import com.youngwon.backoffice.common.auth.LoginSuccessHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,6 +14,8 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
+
+    private final LoginSuccessHandler loginSuccessHandler;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -48,7 +51,7 @@ public class SecurityConfig {
                         .loginProcessingUrl("/login")   //POST 로그인 처리 URL
                         .usernameParameter("username")  //default
                         .passwordParameter("password")  //default
-                        .defaultSuccessUrl("/", true)
+                        .successHandler(loginSuccessHandler)
                         .permitAll()
                 )
 

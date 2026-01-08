@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.auth;
+package com.youngwon.backoffice.common.auth;
 
 import com.youngwon.backoffice.domain.user.User;
 import com.youngwon.backoffice.domain.user.UserRole;
@@ -48,6 +48,10 @@ public class CustomUserDetails implements UserDetails {
     }
     public Long getShopId() {
         return shopId;
+    }
+
+    public UserRole getRole() {
+        return role;
     }
 
     @Override
