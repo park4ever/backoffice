@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.controller;
+package com.youngwon.backoffice.controller.api;
 
 import com.youngwon.backoffice.common.auth.CurrentUser;
 import com.youngwon.backoffice.common.auth.LoginUser;
