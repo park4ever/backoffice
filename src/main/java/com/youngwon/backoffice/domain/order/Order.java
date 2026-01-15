@@ -2,7 +2,7 @@ package com.youngwon.backoffice.domain.order;
 
 import com.youngwon.backoffice.common.entity.BaseTimeEntity;
 import com.youngwon.backoffice.common.value.Money;
-import com.youngwon.backoffice.dto.order.OrderCreateCommand;
+import com.youngwon.backoffice.dto.order.create.OrderCreateCommand;
 import com.youngwon.backoffice.exception.BusinessException;
 import com.youngwon.backoffice.exception.ErrorCode;
 import jakarta.persistence.*;
@@ -187,6 +187,13 @@ public class Order extends BaseTimeEntity {
         this.otherDeductionAmount = requireNonNull(otherDeductionAmount, "otherDeductionAmount");
 
         recalculateSettlementAmounts();
+    }
+
+    public void changeMemo(String memo) {
+        if (memo != null && memo.length() > 500) {
+            throw new BusinessException(ErrorCode.INVALID_REQUEST, "메모는 500자를 초과할 수 없습니다.");
+        }
+        this.memo = memo;
     }
 
     private void recalculateSettlementAmounts() {

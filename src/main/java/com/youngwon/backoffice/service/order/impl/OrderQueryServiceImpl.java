@@ -1,12 +1,12 @@
-package com.youngwon.backoffice.service.impl;
+package com.youngwon.backoffice.service.order.impl;
 
-import com.youngwon.backoffice.dto.order.OrderItemSummaryRow;
-import com.youngwon.backoffice.dto.order.OrderListRowResponse;
-import com.youngwon.backoffice.dto.order.OrderQueryCond;
-import com.youngwon.backoffice.dto.order.OrderRow;
+import com.youngwon.backoffice.dto.order.query.OrderItemSummaryRow;
+import com.youngwon.backoffice.dto.order.query.OrderListRowResponse;
+import com.youngwon.backoffice.dto.order.query.OrderQueryCond;
+import com.youngwon.backoffice.dto.order.query.OrderRow;
 import com.youngwon.backoffice.repository.order.OrderItemRepository;
 import com.youngwon.backoffice.repository.order.OrderRepository;
-import com.youngwon.backoffice.service.OrderQueryService;
+import com.youngwon.backoffice.service.order.OrderQueryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

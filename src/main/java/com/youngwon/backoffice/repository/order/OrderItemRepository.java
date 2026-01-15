@@ -1,7 +1,7 @@
 package com.youngwon.backoffice.repository.order;
 
 import com.youngwon.backoffice.domain.order.OrderItem;
-import com.youngwon.backoffice.dto.order.OrderItemSummaryRow;
+import com.youngwon.backoffice.dto.order.query.OrderItemSummaryRow;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -24,7 +24,7 @@ public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
                                                       @Param("orderId") Long orderId);
 
     @Query("""
-        select new com.youngwon.backoffice.dto.order.OrderItemSummaryRow(
+        select new com.youngwon.backoffice.dto.order.query.OrderItemSummaryRow(
             oi.order.id,
             min(oi.productNameSnapshot),
             count(oi.id)

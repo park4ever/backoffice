@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.service;
+package com.youngwon.backoffice.service.product;
 
 import com.youngwon.backoffice.dto.product.ProductCreateRequest;
 import com.youngwon.backoffice.dto.product.ProductDetailResponse;

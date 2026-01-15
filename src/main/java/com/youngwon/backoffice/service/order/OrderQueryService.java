@@ -1,7 +1,7 @@
-package com.youngwon.backoffice.service;
+package com.youngwon.backoffice.service.order;
 
-import com.youngwon.backoffice.dto.order.OrderListRowResponse;
-import com.youngwon.backoffice.dto.order.OrderQueryCond;
+import com.youngwon.backoffice.dto.order.query.OrderListRowResponse;
+import com.youngwon.backoffice.dto.order.query.OrderQueryCond;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

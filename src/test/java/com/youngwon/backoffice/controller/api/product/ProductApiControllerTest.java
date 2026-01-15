@@ -4,7 +4,7 @@ import com.youngwon.backoffice.common.auth.LoginUser;
 import com.youngwon.backoffice.common.auth.SessionKeys;
 import com.youngwon.backoffice.domain.user.UserRole;
 import com.youngwon.backoffice.dto.product.ProductDetailResponse;
-import com.youngwon.backoffice.service.ProductService;
+import com.youngwon.backoffice.service.product.ProductService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

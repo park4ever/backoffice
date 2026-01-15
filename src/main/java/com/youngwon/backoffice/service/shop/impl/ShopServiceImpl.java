@@ -1,10 +1,10 @@
-package com.youngwon.backoffice.service.impl;
+package com.youngwon.backoffice.service.shop.impl;
 
 import com.youngwon.backoffice.domain.shop.Shop;
 import com.youngwon.backoffice.exception.BusinessException;
 import com.youngwon.backoffice.exception.ErrorCode;
-import com.youngwon.backoffice.repository.ShopRepository;
-import com.youngwon.backoffice.service.ShopService;
+import com.youngwon.backoffice.repository.shop.ShopRepository;
+import com.youngwon.backoffice.service.shop.ShopService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

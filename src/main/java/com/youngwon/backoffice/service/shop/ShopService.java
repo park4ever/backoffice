@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.service;
+package com.youngwon.backoffice.service.shop;
 
 import com.youngwon.backoffice.domain.shop.Shop;
 

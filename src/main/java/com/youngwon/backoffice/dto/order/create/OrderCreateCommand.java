@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.dto.order;
+package com.youngwon.backoffice.dto.order.create;
 
 import com.youngwon.backoffice.common.value.Money;
 import com.youngwon.backoffice.domain.order.SalesChannel;

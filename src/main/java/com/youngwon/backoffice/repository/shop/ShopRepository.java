@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.repository;
+package com.youngwon.backoffice.repository.shop;
 
 import com.youngwon.backoffice.domain.shop.Shop;
 import org.springframework.data.jpa.repository.JpaRepository;

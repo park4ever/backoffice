@@ -2,7 +2,7 @@ package com.youngwon.backoffice.controller.api.product;
 
 import com.youngwon.backoffice.common.auth.CurrentUser;
 import com.youngwon.backoffice.common.auth.LoginUser;
-import com.youngwon.backoffice.service.ProductService;
+import com.youngwon.backoffice.service.product.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;

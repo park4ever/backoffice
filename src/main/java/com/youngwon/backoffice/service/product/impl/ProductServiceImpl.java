@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.service.impl;
+package com.youngwon.backoffice.service.product.impl;
 
 import com.youngwon.backoffice.common.sku.SkuPolicy;
 import com.youngwon.backoffice.domain.product.Product;
@@ -7,10 +7,10 @@ import com.youngwon.backoffice.domain.shop.Shop;
 import com.youngwon.backoffice.dto.product.*;
 import com.youngwon.backoffice.exception.BusinessException;
 import com.youngwon.backoffice.exception.ErrorCode;
-import com.youngwon.backoffice.repository.ProductOptionRepository;
-import com.youngwon.backoffice.repository.ProductRepository;
-import com.youngwon.backoffice.repository.ShopRepository;
-import com.youngwon.backoffice.service.ProductService;
+import com.youngwon.backoffice.repository.product.ProductOptionRepository;
+import com.youngwon.backoffice.repository.product.ProductRepository;
+import com.youngwon.backoffice.repository.shop.ShopRepository;
+import com.youngwon.backoffice.service.product.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

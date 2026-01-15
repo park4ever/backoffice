@@ -1,7 +1,7 @@
 package com.youngwon.backoffice.common.auth;
 
 import com.youngwon.backoffice.domain.user.User;
-import com.youngwon.backoffice.repository.UserRepository;
+import com.youngwon.backoffice.repository.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

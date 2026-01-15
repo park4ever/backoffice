@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.repository;
+package com.youngwon.backoffice.repository.product;
 
 import com.youngwon.backoffice.domain.product.Product;
 import org.springframework.data.domain.Page;

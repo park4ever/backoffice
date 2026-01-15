@@ -1,7 +1,7 @@
 package com.youngwon.backoffice.repository.order;
 
-import com.youngwon.backoffice.dto.order.OrderQueryCond;
-import com.youngwon.backoffice.dto.order.OrderRow;
+import com.youngwon.backoffice.dto.order.query.OrderQueryCond;
+import com.youngwon.backoffice.dto.order.query.OrderRow;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import lombok.RequiredArgsConstructor;

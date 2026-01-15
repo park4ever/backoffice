@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.dto.order;
+package com.youngwon.backoffice.dto.order.query;
 
 import com.youngwon.backoffice.domain.order.OrderKeywordType;
 import com.youngwon.backoffice.domain.order.OrderStatus;

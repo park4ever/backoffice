@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.repository;
+package com.youngwon.backoffice.repository.product;
 
 import com.youngwon.backoffice.domain.product.ProductOption;
 import jakarta.persistence.LockModeType;
@@ -32,4 +32,6 @@ public interface ProductOptionRepository extends JpaRepository<ProductOption, Lo
     """)
     List<ProductOption> findAllByShopIdAndIdInForUpdate(@Param("shopId") Long shopId,
                                                         @Param("ids") List<Long> ids);
+
+    List<ProductOption> findAllByShopIdAndIdIn(Long shopId, List<Long> ids);
 }

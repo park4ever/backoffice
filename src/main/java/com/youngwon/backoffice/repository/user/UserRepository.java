@@ -1,4 +1,4 @@
-package com.youngwon.backoffice.repository;
+package com.youngwon.backoffice.repository.user;
 
 import com.youngwon.backoffice.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;

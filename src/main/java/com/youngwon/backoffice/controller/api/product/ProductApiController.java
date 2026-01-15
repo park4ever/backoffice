@@ -6,7 +6,7 @@ import com.youngwon.backoffice.dto.product.ProductCreateRequest;
 import com.youngwon.backoffice.dto.product.ProductDetailResponse;
 import com.youngwon.backoffice.dto.product.ProductOptionAddRequest;
 import com.youngwon.backoffice.dto.product.ProductOptionAddResponse;
-import com.youngwon.backoffice.service.ProductService;
+import com.youngwon.backoffice.service.product.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
